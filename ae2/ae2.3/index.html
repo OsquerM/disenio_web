@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilos.css">
+<title>Tabla de Contenido del Libro</title>
+</head>
+<body>
+
+<table>
+    <caption>Tabla de Contenido del Libro</caption>
+
+    <colgroup>
+        <col style="width: 15%;">
+        <col style="width: 60%;">
+        <col style="width: 25%;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th colspan="3">Contenido del Libro</th>
+        </tr>
+        <tr>
+            <th colspan="3">Capítulo</th>
+        </tr>
+        <tr>
+            <th>Capítulo</th>
+            <th>Título del Capítulo</th>
+            <th>Páginas</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- Capítulo 1 -->
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Introducción</td>
+            <td>1-5</td>
+        </tr>
+        <tr>
+            <td>Primeros Pasos</td>
+            <td>6-12</td>
+        </tr>
+
+        <!-- Capítulo 2 -->
+        <tr>
+            <td rowspan="2">2</td>
+            <td>Conceptos básicos</td>
+            <td>13-20</td>
+        </tr>
+        <tr>
+            <td>Avanzando</td>
+            <td>21-35</td>
+        </tr>
+
+        <!-- Capítulo 3 -->
+        <tr>
+            <td rowspan="2">3</td>
+            <td>Ejemplos prácticos</td>
+            <td>36-45</td>
+        </tr>
+        <tr>
+            <td>Conclusiones</td>
+            <td>46-50</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
