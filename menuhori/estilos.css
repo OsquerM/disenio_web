@@ -1,0 +1,53 @@
+/* Menú principal */
+.menu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+/* Items del menú */
+.menu li {
+    position: relative; /* necesario para el submenu */
+}
+
+/* Enlaces del menú */
+.menu li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Submenu oculto por defecto */
+.submenu {
+    display: none; /* importante */
+    position: absolute;
+    top: 100%; /* debajo del padre */
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+/* Items del submenu */
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Mostrar submenu al pasar el ratón */
+.menu li:hover > .submenu {
+    display: block;
+}
+
+/* Hover en enlaces */
+.menu li a:hover {
+    background-color: #555;
+}
