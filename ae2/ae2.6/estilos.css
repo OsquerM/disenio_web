@@ -1,0 +1,30 @@
+h1, .subtitulo{
+    color: #336699;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+a{
+    color: #CC3300;
+}
+h2{
+    color: black;
+}
+.destacado{
+    font-weight: bold;
+    color: black;
+}
+button{
+    background-color: #FF9900;
+    color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #cc3300;
+}
