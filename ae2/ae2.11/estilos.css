@@ -1,0 +1,28 @@
+/* Estilo para el breadcrumb */
+.breadcrumb {
+    font-family: Arial, sans-serif;
+    padding: 0.5em;
+    overflow: hidden; /* Para contener los floats */
+}
+
+/* Estilos para los enlaces dentro del breadcrumb */
+.breadcrumb a {
+    color: #0095eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cambio de estilo al pasar el cursor sobre los enlaces */
+.breadcrumb a:hover {
+    color: #006196;
+    text-decoration: underline;
+}
+
+/* Alineación de los enlaces */
+.breadcrumb a.left {
+    float: left;
+}
+
+.breadcrumb a.right {
+    float: right;
+}

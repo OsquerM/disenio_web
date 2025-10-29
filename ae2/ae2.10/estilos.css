@@ -1,0 +1,38 @@
+/* Estilo global para todos los elementos */
+* {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para la etiqueta nav y la lista */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los elementos de lista */
+nav ul li {
+    float: left;
+}
+
+/* Estilos para los enlaces del menú */
+nav ul li a {
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 5px;
+    border-right: 1px solid #336699;
+}
+
+/* Estilos al pasar el cursor sobre los enlaces */
+nav ul li a:hover {
+    background-color: #336699; 
+}
+

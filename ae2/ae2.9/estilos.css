@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1::before {
+    text-align: center;
+    color: #555;
+    content: "\1F63B\00a0";
+}
+h1::after {
+    text-align: center;
+    color: #555;
+    content: "\1F63B\00a0";
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+li::before {
+    content: "\1F63B\00a0";
+    margin-right: 5px;
+    color: #ff6347;
+}
