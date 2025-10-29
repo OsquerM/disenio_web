@@ -1,0 +1,44 @@
+ /* Contenedor del Call to Action */
+    .contenedor {
+      background-image: url('https://cdn.uc.assets.prezly.com/e63873d1-e785-469d-8fc3-e2097b7d3455/1267x525_news%20banner%20-%20preview%20(1).jpg'); /* Imagen de fondo */
+      background-size: cover;       /* Cubrir completamente el contenedor */
+      background-position: center;  /* Centrar la imagen */
+      background-repeat: no-repeat; /* Evitar repetición */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;      /* Centrar verticalmente */
+      align-items: center;          /* Centrar horizontalmente */
+      padding: 60px;                /* Espacio alrededor del contenido */
+      text-align: center;
+      color: #ffffff;               /* Texto blanco */
+    }
+
+    /* Título y párrafo  */
+    .texto {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .contenedor p.texto {
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    /* Botón del CTA */
+    .boton {
+      background-color: #626bb2;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #5056a0; /* Cambia ligeramente */
+    }
