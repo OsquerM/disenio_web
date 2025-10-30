@@ -1,0 +1,65 @@
+/* Estilo del artículo */
+article {
+    float: left;
+    width: 350px;
+    height: 140px;
+    background-color: #F7F3F3;
+    margin: 10px;
+}
+
+/* Imagen del producto */
+img {
+    float: left;
+    width: 100px;
+    padding: 20px;
+}
+
+/* Datos del producto */
+.datos-productos {
+    float: right;
+    width: 190px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Botón de borrar */
+.borrar {
+    float: right;
+    padding: 0 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Nombre del producto */
+.nombre {
+    float: right;
+    font-weight: bold;
+}
+
+/* Precio del producto */
+.precio {
+    float: right;
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+    clear: both; /* evita que se solape con los floats anteriores */
+}
+
+/* Colores disponibles */
+.colores {
+    clear: both; /* para que se sitúe debajo del precio */
+}
+
+/* Estilo para los círculos de color */
+.colores li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    list-style: none;
+}

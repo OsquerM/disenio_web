@@ -1,0 +1,44 @@
+/* Estilos generales */
+* {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilos de la tabla */
+.styled-table {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border-collapse: collapse;
+    caption-side: bottom; /* título debajo */
+}
+
+/* Estilo del título de la tabla */
+caption {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Celdas de encabezado y datos */
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Encabezado */
+thead th {
+    background-color: #009688;
+    color: #fff;
+}
+/* Efecto hover sobre las filas */
+tbody tr:hover {
+    background-color: #c7e2e0;
+}
+
+/* Tercera columna (Precio): agrega el símbolo € */
+tbody td:nth-child(3)::after {
+    content: " €";
+}
+.num {
+    background-color: #009688;
+    color: white;
+}

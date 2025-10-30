@@ -1,0 +1,35 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: #EDEEEE;
+    color: orange;
+    border-bottom: 3px solid #4caf50;
+    padding: 30px;
+    font-weight: normal;
+}
+
+/* Contenedor de imágenes */
+.galeria {
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden; /* Evita que las imágenes se salgan del contenedor */
+}
+
+/* Estilo para las imágenes dentro de la galería */
+.galeria img {
+    float: left;
+    padding: 1.2em;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; 
+}
+
+
+.galeria img:hover {
+    background-color: #e8f1f4;
+}
