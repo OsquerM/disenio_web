@@ -58,8 +58,9 @@ img {
     width: 20px;
     height: 20px;
     display: inline-block;
-    border-radius: 50%;
-    margin-right: 5px;
-    border: 1px solid #ccc;
+    border-radius: 12.5px;
+    margin-left: 5px;
+    border: 1px solid black;
     list-style: none;
+    background-color: red;
 }
