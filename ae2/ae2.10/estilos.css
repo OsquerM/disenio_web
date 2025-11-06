@@ -9,14 +9,14 @@
 
 /* Estilos para la etiqueta nav y la lista */
 nav ul {
-    list-style: none;
+    list-style: none;/* Eliminar viñetas */
     margin: 0;
     padding: 0;
 }
 
 /* Estilos para los elementos de lista */
 nav ul li {
-    float: left;
+    float: left; /* Alinear los elementos horizontalmente */
 }
 
 /* Estilos para los enlaces del menú */

@@ -25,7 +25,7 @@ h1 {
 .galeria img {
     float: left;
     padding: 1.2em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
     border-radius: 5px; 
 }
 
