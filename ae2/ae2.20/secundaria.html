@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Secundaria</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/newlogo_2.png" alt="Logo Corporativo"></a>
+        </div>
+        <nav class="main-nav">
+            <a href="#menu">Menú</a>
+            <a href="#vinos">Carta de Vinos</a>
+            <a href="#contacto">Contacto y Reservas</a>
+        </nav>
+    </header>
+
+   <main class="content">
+
+    <!-- MENÚ -->
+    <section id="menu" class="section-box">
+        <h2>Menú</h2>
+        <div class="platos-container">
+            <!-- 5 Entrantes fríos -->
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>5€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>6€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>5€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>7€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>5€</span></div>
+
+            <!-- 6 Raciones -->
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>8€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>9€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>7€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>8€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>9€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>10€</span></div>
+
+            <!-- 4 Platos principales -->
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>12€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>13€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>14€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>15€</span></div>
+
+            <!-- 3 Postres -->
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>6€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>7€</span></div>
+            <div class="plato"><div class="imagen"></div><p>Lorem Ipsum</p><span>8€</span></div>
+        </div>
+    </section>
+
+    <!-- CARTA DE VINOS -->
+    <section id="vinos" class="section-box">
+        <h2>Carta de Vinos</h2>
+        <div class="vinos-container">
+            <div class="vino"><div class="imagen"></div><p>Rioja 1 - 12€</p></div>
+            <div class="vino"><div class="imagen"></div><p>Rioja 2 - 14€</p></div>
+            <div class="vino"><div class="imagen"></div><p>Ribera del Duero 1 - 13€</p></div>
+            <div class="vino"><div class="imagen"></div><p>Ribera del Duero 2 - 15€</p></div>
+            <div class="vino"><div class="imagen"></div><p>Blanco Espumoso 1 - 10€</p></div>
+            <div class="vino"><div class="imagen"></div><p>Blanco Espumoso 2 - 11€</p></div>
+        </div>
+    </section>
+
+    <!-- CONTACTO Y RESERVAS -->
+    <section id="contacto" class="section-box">
+        <h2>Contacto y Reservas</h2>
+        <div class="contact-container">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <form class="reserva-form">
+                <label>Nombre: <input type="text" required></label>
+                <label>Email: <input type="email" required></label>
+                <label>Teléfono: <input type="tel" required></label>
+                <label>Fecha: <input type="date" required></label>
+                <label>Hora: <input type="time" required></label>
+                <label>Número de personas:
+                    <select required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+
+    <footer class="main-footer">
+        <div class="footer-left">Kiosko Fernando | El morche</div>
+        <div class="footer-center">© 2025 Todos los derechos reservados</div>
+        <div class="footer-right">
+            <div class="social"><span class="icon">📘</span> Facebook</div>
+            <div class="social"><span class="icon">🐦</span> Twitter</div>
+            <div class="social"><span class="icon">📸</span> Instagram</div>
+        </div>
+    </footer>
+</body>
+</html>

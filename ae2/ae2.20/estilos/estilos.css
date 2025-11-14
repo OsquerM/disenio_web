@@ -1,0 +1,239 @@
+/* --- Variables de estilo --- */
+:root {
+    --primary-color: rgb(50, 50, 230)
+    ;
+    --secondary-color: #ecf0f1;
+    --accent-color: rgb(50,50,230);
+    --font-family: 'Arial', sans-serif;
+}
+
+/* --- Reset básico --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: #333;
+}
+
+/* --- Header --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.main-header .logo img {
+    height: 50px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+}
+
+/* --- Footer --- */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer-right .social {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.footer-right .icon {
+    margin-right: 5px;
+}
+
+/* --- Call to Action --- */
+.cta-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax {
+    background-image: url('../img/fondo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.language-buttons {
+    margin-top: 20px;
+}
+
+.btn-lang {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.btn-lang img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.btn-lang:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* --- Efecto pulsación --- */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* --- Página Secundaria --- */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.section-box {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--accent-color);
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* --- Responsive (Mobile First) --- */
+@media (max-width: 720px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* --- Sección de platos --- */
+.platos-container, .vinos-container, .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.plato, .vino {
+    background-color: #000; /* cuadrado negro */
+    color: white;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.plato:hover, .vino:hover {
+    transform: scale(1.1);
+}
+
+.plato .imagen, .vino .imagen {
+    background-color: #333;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+/* --- Contacto y reservas --- */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-container .mapa, .contact-container .reserva-form {
+    flex: 1 1 300px;
+}
+
+.reserva-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reserva-form input, .reserva-form select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.reserva-form button {
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.reserva-form button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+/* --- Responsive --- */
+@media (max-width: 720px) {
+    .platos-container, .vinos-container, .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
