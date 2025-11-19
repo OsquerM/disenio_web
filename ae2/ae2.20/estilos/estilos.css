@@ -1,10 +1,10 @@
 /* --- Variables de estilo --- */
 :root {
-    --primary-color: rgb(50, 50, 230)
+    --primary-color: #0763e3
     ;
     --secondary-color: #ecf0f1;
-    --accent-color: rgb(50,50,230);
-    --font-family: 'Arial', sans-serif;
+    --accent-color: #f4d9a0;
+    --font-family: 'Open Sans', sans-serif;
 }
 
 /* --- Reset básico --- */
@@ -20,31 +20,44 @@ body {
     color: #333;
 }
 
-/* --- Header --- */
+/* Header */
 .main-header {
-    display: flex;
-    justify-content: space-between;
+    display: flex;                  /* Flex en header */
+    justify-content: space-between;  /* Logo a la izquierda, menú a la derecha */
     align-items: center;
     padding: 15px 30px;
     background-color: var(--primary-color);
     color: white;
 }
 
+/* Logo + menú */
+.main-header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* para que el menú se vaya a la derecha */
+}
+
 .main-header .logo img {
     height: 50px;
 }
 
-.main-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.main-nav {
+.main-header .menu {
     display: flex;
+    gap: 20px;
 }
 
+.main-header .menu a {
+    text-decoration: none;
+    color: white;  /* blanco para que contraste con el header */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.main-header .menu a:hover {
+    color: #b22222;
+}
 /* --- Footer --- */
 .main-footer {
     display: flex;
@@ -212,7 +225,7 @@ body {
 }
 
 .reserva-form button {
-    background-color: blue;
+    background-color: var(--primary-color);
     border: none;
     padding: 10px;
     font-weight: bold;
@@ -224,7 +237,7 @@ body {
 }
 
 .reserva-form button:hover {
-    background-color: var(--primary-color);
+    background-color: #0053c8;
     color: white;
     transform: scale(1.05);
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
